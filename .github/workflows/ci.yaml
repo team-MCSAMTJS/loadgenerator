@@ -1,11 +1,11 @@
-name: CI for  loadgenerator
+name: CI for loadgenerator
 
 on:
   push:
     branches: [ main ]
 
 env:
-  IMAGE_NAME: charlino4u/ loadgenerator
+  IMAGE_NAME: charlino4u/loadgenerator
 
 jobs:
   build-and-push:
@@ -30,7 +30,7 @@ jobs:
           context: .
           push: true
           tags: |
-            charlino4u/ loadgenerator:latest
-            charlino4u/ loadgenerator:${{ github.sha }}
+            charlino4u/loadgenerator:latest
+            charlino4u/loadgenerator:${{ github.sha }}
 
             
